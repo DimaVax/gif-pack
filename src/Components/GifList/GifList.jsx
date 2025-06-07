@@ -7,10 +7,14 @@ export class GifList extends Component {
     render() {
         return(
             <ul>
-                {/* {this.state.gifData.
+                {this.state.gifData.map((gif) => {
+                    {console.log(gif)}
+                    return(
+                    <li>
+                        <img src={gif.bitly_gif_url} alt="r" />
+                    </li>
+                )})}
 
-                } */}
-            
             </ul>
         )
     }
